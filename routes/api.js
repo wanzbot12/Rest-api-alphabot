@@ -295,7 +295,7 @@ router.get('/cewe/vietnam', async (req, res, next) => {
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
              	author: 'Zeeone',
-                 result
+                 result h
              })
          })
          .catch(e => {
