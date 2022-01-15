@@ -14,8 +14,8 @@ router.get('/store', (req, res) => {
 router.get('/store/about', (req, res) => {
     res.sendFile(__path + '/views/about.html')
 })
-router.get('/store/aboutt', (req, res) => {
-    res.sendFile(__path + '/views/about (Copy).html')
+router.get('/store/jualan', (req, res) => {
+    res.sendFile(__path + '/views/jualan.html')
 })
 
 router.get('/store/news', (req, res) => {
