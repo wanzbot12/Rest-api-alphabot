@@ -109,82 +109,10 @@ loghandler = {
         creator: `${creator}`,
         code: 406,
         message: 'theme tidak tersedia silahkan masukkan texmaker/list atau baca documentasi'
-     },
+    },
     invalidKey: {
-        message: '💎🐉ICEDRAGONSTORE💎🐉
-*#FFMO_D54*
-*PAYMENT:DIGI*
-*OPEN*
-PRICE LIST DM FREE FIRE💎
-RM5= 100💎
-RM10= 235💎
-RM15= 385💎
-RM20= 520💎
-RM25= 645💎
-RM30= 820💎
-ʀᴍ40= 1080💎
-RM50= 1415💎
-RM60= 1600💎
-RM70= 1775💎
-RM80= 2200💎
-RM90= 2620💎
-RM100= 2845💎
-*MEMBERSHIP*
-_RM10:WEEKLY_
-_CLAIM 50 DM💎 7 HARI_
-_RM40:MONTHY_
-_CLAIM 70💎 30 HARI_
-
-*HANYA DIPERLUKAN*📝
-*ID:*
-*PIN:*
-*TOTAL:*
-*PROSES 5 OR 10 MINIT💎*
-
-*NOTE*
-*•BGI PIN USED N THEN TUDUH ICEDRAGONSTORE SCAM OTW VIRAL🐦*
-*•SPAM CALL/CHAT -25💎*
-*•BGI ID SALAH ICE X* *BERTANGGUNGJAWAB*
-*•COPY LIST/UBAH LIST HARAM+VIRAL*
-
-*ROAD 1.5K FEEDBACK*
-*SINCE 2020*
-*ROAD 15K🟡*
-*FAST SERVICES⚡*
-*FAST RESPON⚡*
-
-*TOLONG FULLKAN TQ❤️*
-*💎🐉ICEDRAGONSTORE 🐉💎V.1*
-https://chat.whatsapp.com/HysaLMfiq0SFgWALHQVBzG
-*💎🐉ICEDRAGONSTORE 🐉💎V.2*
-https://chat.whatsapp.com/CX1pRvodPu0A8nLf5JDQt5
-*💎🐉ICEDRAGONSTORE🐉💎V.3*
-https://chat.whatsapp.com/CX1pRvodPu0A8nLf5JDQt5
-*💎🐉ICEDRAGONSTORE🐉💎V.4*
-https://chat.whatsapp.com/LZ297qUAde3LgWRtQPkjUg
-*💎🐉ICEDRAGONSTORE🐉💎V.5*
-https://chat.whatsapp.com/I15ZAqMk2nGInNwNU61iX9
-*💎🐉ICEDRAGONSTORE🐉💎V.6*
-https://chat.whatsapp.com/F7izPsA2s0w3xiD8LrB3P4
-*💎🐉ICEDRAGONSTORE🐉💎V.7*
-https://chat.whatsapp.com/CNxLmjDX0R6D6t65R39cQO
-*💎🐉ICEDRAGONSTORE🐉💎V.8*
-https://chat.whatsapp.com/B9FiwTCBhgP20KMEfMVFum
-*💎🐉ICEDRAGONSTORE🐉💎V.9*
-https://chat.whatsapp.com/Bz6xU7NQ9eqC2KGCVNQTpO
-*💎🐉ICEDRAGONSTORE🐉💎V.10*
-https://chat.whatsapp.com/EYI8s5T8gaz51WqMvjWnn0
-*💎🐉ICEDRAGONSTORE🐉💎V.11*
-https://chat.whatsapp.com/FnKb4T29yYECbDio85lvrX
-*💎🐉ICEDRAGONSTORE🐉💎V.12*
-https://chat.whatsapp.com/KKONPCc2QxrA2sKr321BTF
-*💎🐉ICEDRAGONSTORE🐉💎V.13*
-https://chat.whatsapp.com/BnmZimLIgGS4ay7Bjcgf33
-*LINK FEEDBACK👇🏻*
-*- 1400+ FEEDBACK -*
-https://t.me/icedragonstore
-*DIRECT CHAT*
-https://api.whatsapp.com/send?phone=+601135268529&text=aslm+nak+beli+dm'
+        status: false,
+        message: 'Apikey??? Contact Me On WhatsApp'
     },
     invalidlink: {
         status: false,
