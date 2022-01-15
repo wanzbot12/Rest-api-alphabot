@@ -110,7 +110,9 @@ loghandler = {
         code: 406,
         message: 'theme tidak tersedia silahkan masukkan texmaker/list atau baca documentasi'
      },
-    invalidKey: 
+    invalidKey: {
+        status: false,
+        message: 'Apikey??? Contact Me On WhatsApp'
     },
     invalidlink: {
         status: false,
