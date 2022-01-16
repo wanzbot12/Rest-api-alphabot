@@ -14,6 +14,10 @@ router.get('/store', (req, res) => {
 router.get('/store/about', (req, res) => {
     res.sendFile(__path + '/views/about.html')
 })
+
+router.get('/store/ff', (req, res) => {
+    res.sendFile(__path + '/views/dompet.html')
+})
 router.get('/store/jualan', (req, res) => {
     res.sendFile(__path + '/views/jualan.html')
 })
