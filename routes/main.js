@@ -22,8 +22,8 @@ router.get('/store/jualan', (req, res) => {
     res.sendFile(__path + '/views/jualan.html')
 })
 
-router.get('/store/news', (req, res) => {
-    res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
+router.get('/store/login', (req, res) => {
+    res.redirect('/views/login.php')
 })
 
 router.get('/config', (req, res) => {
