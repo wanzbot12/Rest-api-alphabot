@@ -23,7 +23,7 @@ router.get('/store/jualan', (req, res) => {
 })
 
 router.get('/store/login', (req, res) => {
-    res.sendFile(__path + '/views/login.php')
+    res.sendFile(__path + '/views/storewebsite')
 })
 
 router.get('/config', (req, res) => {
