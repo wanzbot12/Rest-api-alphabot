@@ -37,6 +37,9 @@ router.get('/logout', (req, res) => {
 router.get('/signup', (req, res) => {
     res.sendFile(__path + '/signup.html')
 })
+router.get('/login', (req, res) => {
+    res.sendFile(__path + '/login.html')
+})
 router.get('/config1', (req, res) => {
     res.sendFile(__path + '/config.html')
 })
