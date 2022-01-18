@@ -22,8 +22,8 @@ router.get('/store/jualan', (req, res) => {
     res.sendFile(__path + '/views/jualan.html')
 })
 
-router.get('/store/login', (req, res) => {
-    res.sendFile(__path + '/views/storewebsite.php')
+router.get('/store/item', (req, res) => {
+    res.sendFile(__path + '/views/diamond.html')
 })
 
 router.get('/config', (req, res) => {
