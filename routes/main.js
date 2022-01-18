@@ -28,11 +28,21 @@ router.get('/store/item', (req, res) => {
 router.get('/store/item/checkout', (req, res) => {
     res.sendFile(__path + '/views/cekqout.html')
 })
-router.get('/login', (req, res) => {
+router.get('/register', (req, res) => {
     res.sendFile(__path + '/register.html')
 })
-
+router.get('/logout', (req, res) => {
+    res.sendFile(__path + '/logout.html')
+})
+router.get('/signup', (req, res) => {
+    res.sendFile(__path + '/signup.html')
+})
 router.get('/config', (req, res) => {
+    res.sendFile(__path + '/config.html')
+})
+router.get('/welcome', (req, res) => {
+    res.sendFile(__path + '/welcome.html')
+router.get('/colnfig', (req, res) => {
     config = {
         status: true,
         result: {
