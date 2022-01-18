@@ -37,19 +37,18 @@ router.get('/logout', (req, res) => {
 router.get('/signup', (req, res) => {
     res.sendFile(__path + '/signup.html')
 })
-router.get('/config', (req, res) => {
+router.get('/config1', (req, res) => {
     res.sendFile(__path + '/config.html')
 })
-router.get('/welcome', (req, res) => {
-    res.sendFile(__path + '/welcome.html')
-router.get('/colnfig', (req, res) => {
+
+router.get('/config', (req, res) => {
     config = {
         status: true,
         result: {
             prefix : '/',
-            namabot: 'icebotz',
-            namaowner: 'Wanz',
-            instagram: 'gak punya',
+            namabot: 'ZhirrrBot',
+            namaowner: 'Zhirrr',
+            instagram: 'zhirr_ajalah',
             youtube : 'Gak Punya'
         }
     }
