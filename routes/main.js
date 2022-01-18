@@ -29,7 +29,7 @@ router.get('/store/item/checkout', (req, res) => {
     res.sendFile(__path + '/views/cekqout.html')
 })
 router.get('/register', (req, res) => {
-    res.sendFile(__path + '/register.html')
+    res.sendFile(__path + '/view/test.html')
 })
 router.get('/logout', (req, res) => {
     res.sendFile(__path + '/logout.html')
