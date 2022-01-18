@@ -25,6 +25,9 @@ router.get('/store/jualan', (req, res) => {
 router.get('/store/item', (req, res) => {
     res.sendFile(__path + '/views/diamond.html')
 })
+router.get('/store/item/checkout', (req, res) => {
+    res.sendFile(__path + '/views/diamond.html')
+})
 
 router.get('/config', (req, res) => {
     config = {
