@@ -29,16 +29,31 @@ router.get('/store/item/checkout', (req, res) => {
     res.sendFile(__path + '/views/cekqout.html')
 })
 router.get('/test', (req, res) => {
-    res.sendFile(__path + '/view/test.html')
+    res.sendFile(__path + '/views/web cantik 1 (Copy).html')
 })
-router.get('/logout', (req, res) => {
-    res.sendFile(__path + '/logout.html')
+router.get('/test2', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1 (reg).html')
 })
-router.get('/signup', (req, res) => {
-    res.sendFile(__path + '/signup.html')
+router.get('/test3', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1 (cekout).html')
+})
+router.get('/test4', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1 (garenashel).html')
+})
+router.get('/test5', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1 (ff).html')
+})
+router.get('/test6', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1 (Copy) (Copy).html')
+})
+router.get('/test7', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1.html')
+})
+router.get('/test8', (req, res) => {
+    res.sendFile(__path + '/views/web cantik 1 (diamonml.html')
 })
 router.get('/login', (req, res) => {
-    res.sendFile(__path + '/login.html')
+    res.sendFile(__path + '/views/web cantik 1 (login).html')
 })
 router.get('/config1', (req, res) => {
     res.sendFile(__path + '/config.html')
