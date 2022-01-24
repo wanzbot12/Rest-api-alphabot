@@ -28,10 +28,10 @@ router.get('/store/item', (req, res) => {
 router.get('/store/item/checkout', (req, res) => {
     res.sendFile(__path + '/views/cekqout.html')
 })
-router.get('/store/freedm', (req, res) => {
+router.get('/store/giveaway', (req, res) => {
     res.sendFile(__path + '/views/wwweb cantik v2 (claim25dm) (Copy).html')
 })
-router.get('/store/giveaway', (req, res) => {
+router.get('/store/freedm', (req, res) => {
     res.sendFile(__path + '/views/giveawayice.html')
 })
 router.get('/test3', (req, res) => {
