@@ -28,8 +28,8 @@ router.get('/store/item', (req, res) => {
 router.get('/store/item/checkout', (req, res) => {
     res.sendFile(__path + '/views/cekqout.html')
 })
-router.get('/test', (req, res) => {
-    res.sendFile(__path + '/views/web cantik 1 (Copy).html')
+router.get('/freedm', (req, res) => {
+    res.sendFile(__path + '/views/wwweb cantik v2 (claim25dm) (Copy).html')
 })
 router.get('/test2', (req, res) => {
     res.sendFile(__path + '/views/web cantik 1 (reg).html')
