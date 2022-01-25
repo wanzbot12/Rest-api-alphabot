@@ -215,56 +215,6 @@ button1:hover {
   }
 }
 
- ////
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-
-<link rel="stylesheet" href="vendor/nucleo/css/nucleo.css" type="text/css">
-<link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-<link rel="stylesheet" href="css/kotzyy.css?v=1.2.0" type="text/css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<style type="text/css">
-  .preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: #fff;
-  }
-  .preloader .loading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  font: 14px arial;
-  }
-  </style>
-<script>
-  $(document).ready(function() {
-    setTimeout(function() {
-  $(".preloader").fadeOut();
-      Swal.fire({
-      position: 'top-center',
-      icon: 'success',
-      text: 'HELO GENZ',
-      showClass: {
-      popup: 'animate__animated animate__rollIn'
-      },
-      hideClass: { 
-      popup: 'animate__animated animate__rollOut'
-      }
-      })
-    }, 1300)
-  })
-  </script>
-</style>
-</head>
-<body>
- /// Habis //
 </style>
 
 <body id="page-top" onload="getvisitor();">
@@ -711,13 +661,13 @@ setTimeout(showSlides, 3000); // Change image every 3000 seconds
 
 <div class="card-body">
 
-<div class="row no-gutters align-items-center">
+<div class="row">
 
-<div class="col mr-2">
+<div class="col">
 
-<div class="text-xs font-weight-bold text-uppercase mb-1">Time</div>
+<div class="card-title text-uppercase text-muted mb-">Time</div>
 
-<div class="h5 mb-0 font-weight-bold text-gray-800">
+<div class="h2 font-weight-bold mb-0">
 
 <div class="jam" id="jam">00:00:00</div>
 
@@ -734,7 +684,8 @@ setTimeout(showSlides, 3000); // Change image every 3000 seconds
 </div>
 
 <div class="col-auto">
-
+<div class="iq-cart-image">
+<lord-icon src="https://cdn.lordicon.com/kbtmbyzy.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:50px;height:50px"></lord-icon>
 <i class="far fa-clock fa-2x text-primary"></i>
 
 </div>
