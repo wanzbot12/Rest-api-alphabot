@@ -621,6 +621,169 @@ setTimeout(showSlides, 3000); // Change image every 3000 seconds
 </div>
 </div>
 </div>
+
+          <!-- test 1 -->
+  </style>
+  <link href="https://ardybotzz.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://ardybotzz.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://ardybotzz.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet">
+  <script src="https://ardybotzz.github.io/cookie.js"></script>
+  <script src="https://ardybotzz.github.io/plugins/swal.js"></script>
+</head>
+<body>
+
+            <!-- Battery Level -->
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body h-100">
+                  <div class="row no-gutters">
+                    <div class="col mr-2">
+                      <div class="m-0 font-weight-bold text-uppercase mb-1">Battery</div>
+                      <div class="small font-weight-bold text-gray-600" id="level-battery">Waiting...</div>
+                      <br />
+                      <div class="small font-weight-bold text-gray-600" id="charging-battery"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-battery-full fa-2x text-danger"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Date Info -->
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body h-100">
+                  <div class="row no-gutters">
+                    <div class="col mr-2">
+                      <h5 class="m-0 font-weight-bold text-uppercase mb-1">Date Now</h5>
+                      <h3 class="small font-weight-bold text-gray-600" id="tanggal">Waiting...</h3>
+                      <br />
+                      <div class="small font-weight-bold text-gray-600" id="Ucapan"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-globe fa-2x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+
+  <script>
+  myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+  myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum at','Sabtu'];
+  var tgl = new Date();
+  var day = tgl.getDate()
+  bulan = tgl.getMonth()
+  var thisDay = tgl.getDay(),
+  ThisDay = myDays[thisDay];
+  var yy = tgl.getYear()
+  var year = (yy < 1000) ? yy + 1900 : yy;
+
+  const tanggal = `${ThisDay}, ${day} - ${myMonths[bulan]} - ${year}`
+  document.getElementById("tanggal").innerHTML = tanggal;
+  
+  Sayings = "";
+			var now = new Date();
+			var hours = now.getHours();
+			if (hours >= 17 || hours <= 2){
+			Sayings += "<span class='text-success'>Selamat malam</span>"
+			} else if (hours >= 3 && hours <= 10){
+			Sayings += "<span class='text-success'>Selamat pagi</span>"
+			} else if (hours >= 11 && hours <= 14){
+			Sayings += "<span class='text-success'>Selamat Siang</span>"
+			} else if (hours >= 13 && hours <= 16){
+			Sayings += "<span class='text-success'>Selamat Sore</span>"
+			}
+      document.getElementById("Ucapan").innerHTML = Sayings;
+  
+  //window.setTimeout("readTonewYears()", 1000)
+  
+  /*let yearstrvl = setInterval (() => {
+    var countDownDate = new Date("2022-01-01").getTime();
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var dayss = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hourss = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutess = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //var secondss = Math.floor((dqistance % (1000 * 60)) / 1000);
+    newyears = `${dayss} Hari ${hourss} Jam ${minutess} Menit`
+    document.querySelector("#readtonewy").textContent = newyears;
+    if (days < 1) {
+      clearInterval (yearstrvl)
+      document.querySelector("#readtonewy").textContent = "New Years";
+      Swal.fire("Horee Udah Tahun Baru🥳")
+    }
+  }, 10000)*/
+  
+  window.setTimeout("waktu()", 1000);
+	function waktu() {
+		var d = new Date();
+  const jam = d.getHours();
+  const menit = d.getMinutes();
+  const detik = d.getSeconds();
+		setTimeout("waktu()", 1000);
+		document.getElementById("Clock").innerHTML = jam +" : "+ menit +" : "+ detik +" WIB";
+	}
+	
+    window.onload = function () {
+      function updateBatteryStatus(battery) {
+        document.querySelector('#charging-battery').textContent = battery.charging ?  'proses charging ⚡': 'not charging ❌';
+        console.log("Battery charging? "+ (battery.charging ? "Yes" : "No"));
+        document.querySelector("#level-battery").textContent = `Battery level : ${(battery.level * 100).toFixed(0)}`+"%";
+      }
+      navigator.getBattery().then(function(battery){
+        updateBatteryStatus(battery)
+        battery.onchargingchange = function () {
+          updateBatteryStatus(battery)
+        }
+        battery.onlevelchange = function () {
+          updateBatteryStatus(battery)
+        }
+        battery.ondischargingtimechange = function () {
+          updateBatteryStatus(battery)
+        }
+      })
+    }
+    
+    function pleaseLogout() {
+      const notif = new Notification("New message from Ardy", {
+        body: "If you have already logged in, please log out to reset all cookies to new ones",
+        icon: "https://i.ibb.co/CsKdbvw/Ardy.jpg"
+      })
+      notif.onclick = function (e) {
+        window.location.href = "/logout"
+      }
+    }
+    
+    if (Notification.permission == "granted") {
+      pleaseLogout()
+    } else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then(permission => {
+        if (permission == "granted") {
+          pleaseLogout()
+        }
+      })
+    }
+    
+  </script>
+  <script src="https://ardybotzz.github.io/cookie.js"></script>
+  <script src="https://ardybotzz.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
+  <script src="https://ardybotzz.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ardybotzz.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://ardybotzz.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
+  <script src="https://ardybotzz.github.io/RuangAdmin/vendor/chart.js/Chart.min.js"></script>
+  <script src="https://ardybotzz.github.io/RuangAdmin/js/demo/chart-area-demo.js"></script>
+</body>
+</html>
+
+
+          <!-- tamat -->
+
              <div class="col-xl-3 col-md-6 mb-4">
 <div class="card h-100">
 <div class="card-body">
