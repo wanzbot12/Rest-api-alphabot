@@ -34,7 +34,7 @@ router.get('/store/giveaway', (req, res) => {
 router.get('/store/freedm', (req, res) => {
     res.sendFile(__path + '/views/giveawayice.html')
 })
-router.get('/games', (req, res) => {
+router.get('/store/games', (req, res) => {
     res.sendFile(__path + '/views/games.html')
 })
 router.get('/test4', (req, res) => {
