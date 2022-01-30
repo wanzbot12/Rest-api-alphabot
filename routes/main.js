@@ -40,8 +40,8 @@ router.get('/store/games', (req, res) => {
 router.get('/store/not-found', (req, res) => {
     res.sendFile(__path + '/views/notfound.html')
 })
-router.get('/test5', (req, res) => {
-    res.sendFile(__path + '/views/web cantik 1 (ff).html')
+router.get('/store/maintenance', (req, res) => {
+    res.sendFile(__path + '/views/maintenance.html')
 })
 router.get('/test6', (req, res) => {
     res.sendFile(__path + '/views/web cantik 1 (Copy) (Copy).html')
